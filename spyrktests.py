@@ -11,10 +11,11 @@ print spark.devices     # List all avaliable spark cores (dictionary with names)
 print spark.RE_core1.variables  # Dictionary of all exposed variable (names) and their types
 
 print spark.RE_core1.testinteger
-print spark.RE_core1.testString.encode('utf-8')
+print spark.RE_core1.testString
 
 
 for i in xrange(1000):
     # print spark.RE_core1.blink
     print spark.RE_core1.analogRead()
+    sleep(.5)
 
